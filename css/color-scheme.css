@@ -1,0 +1,10 @@
+:root {
+    /*  These colors are invalid as is. Use inside rgb() or rgba().
+        For example rgba(var(--bg1-color),0.5); */
+    --bg1-color: 240,204,181;   /* sand color, taken from ground of background photo */
+    --bg2-color: 86,125,210;    /* sky color, taken from sky of background photo */
+    --bg3-color: 61,60,52;    /* juniper color, taken from tree of background photo */
+    --fg1-color: 58,41,70;      /* purple color taken from rock in shadow of background photo */
+    --fg2-color: 105,61,51;     /* brown color, taken from rock of background photo */
+    --fg3-color: 228,234,254;   /* cloud color, taken from sky of background photo */
+}

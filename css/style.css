@@ -1,0 +1,267 @@
+header {width: 100%;}
+
+body,
+.bgcolor {
+    background-color: rgba(var(--bg1-color),1);
+    color: rgba(var(--fg1-color),1);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.containerw100 {
+    width: 100%;
+    height: auto;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.navbar {
+    background-color: rgba(var(--bg2-color),.5);
+    font-weight: 500;
+}
+
+.navbar-brand span {
+    color: rgba(var(--fg1-color),1);
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    border: .5px solid rgba(0,0,0,0); /* initially invisible, changes in javascript */
+    border-radius: 5px;
+}
+
+.nav-link span {
+    color: rgba(var(--fg1-color),0.5);
+    padding: 0 0.2rem;
+}
+
+.intro {
+    color: rgba(var(--fg3-color),1);
+    text-align: center;
+    margin-top: 20%;
+}
+
+#scrollpt-1 {
+    position: absolute;
+    top: 650px;
+}
+
+#spacer-a {
+    width: 100%;
+    height: 500px; /* value is reset in scroll.js */
+}
+
+.box-shadow {
+    -webkit-box-shadow: -2px 2px 8px 1px rgba(0,0,0,0.8);
+    box-shadow: -2px 2px 8px 1px rgba(0,0,0,0.8);
+}
+
+.button {margin-bottom: 1.5rem;}
+
+.button img {
+    border: 2px solid rgba(0,0,0,0.8);
+    border-radius: 1000px;
+    overflow: hidden;
+}
+
+.button-photo {
+    width: 25%;
+    height: auto;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    border: none;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.carousel-size {
+    width: 60%;
+}
+
+.carousel-inner {
+    border: 2px solid rgba(0,0,0,0.8);
+    border-radius: 1rem;
+}
+
+.semi-background {
+    /* these styles are for carousel captions hard to read against a light background */
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+section {
+    padding: 2rem 0 6rem 0;
+    color: inherit;
+    text-align: center;
+}
+
+.skill-button {
+    width: 150px;
+    height: 150px;
+}
+
+.skill-button:hover {
+    transform: scale(1.1);
+}
+
+.section-heading {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.section-subheading {
+    font-size: 1.2rem;
+    color: rgba(var(--fg1-color),0.8);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(var(--bg3-color),1);
+    color: rgba(var(--fg3-color),1);
+}
+
+.joke {text-align: left;}
+
+.list-group,
+.list-group-item {
+    background-color: inherit;
+}
+
+td {
+    vertical-align: top;
+}
+
+footer {
+    font-size: 3rem;
+    background-color: rgba(var(--bg3-color),1);
+    color: rgba(var(--fg3-color),1);
+}
+
+footer p,
+footer a {
+    font-size: .8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon-footer {
+    width: 100px;
+    height: auto;
+    filter: invert(.9);
+}
+
+.icon-footer:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*=============== Media Querries ===============*/
+@media screen and (min-width: 2400.05px) {
+    .intro {
+        font-size: 6rem;
+        text-shadow: -.4rem .4rem .4rem rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 2400px) {
+    .intro {
+        font-size: 5rem;
+        text-shadow: -.3rem .3rem .3rem rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .intro {
+        font-size: 4rem;
+        text-shadow: -.25rem .25rem .25rem rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .intro {
+        font-size: 3rem;
+        text-shadow: -.2rem .2rem .2rem rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .intro {
+        font-size: 2rem;
+        text-shadow: -.13rem .13rem .13rem rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .joke,
+    .skill-set {
+        margin-top: 2rem;
+    }
+    section {
+        padding: 2rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .section-heading {font-size: 2.5rem;}
+    .section-subheading {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .icon {width: 40px;}
+    .col h4 {font-weight: 400;}
+    .icon-footer {width: 50px;}
+    .footer-text {font-size: 1rem;}
+    .skill-button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    #about {background-color: inherit;}
+    .box-shadow {
+        -webkit-box-shadow: -1px 1px 4px .5px rgba(0,0,0,0.8);
+        box-shadow: -1px 1px 4px .5px rgba(0,0,0,0.8);
+    }
+    /* resize photo of Ariel */
+    .button-photo {
+        width: 40%;
+        height: auto;
+    }
+    .carousel-size {
+        width: 90%;
+    }
+    .carousel-caption h5 {font-size: 1rem;}
+    .carousel-caption p {font-size: .8rem;}
+}
+
+@media screen and (max-width: 350px) {
+    .intro {
+        font-size: 1.5rem;
+        text-shadow: -.2rem .2rem .2rem rgba(0,0,0,0.5);
+    }
+}
