@@ -65,6 +65,9 @@ function doNavLinkBgColor(event) {
     if (event.target.tagName == "SPAN") {
         innerObj = event.target;
         outerObj = event.target.parentElement;
+    } else if (event.target.tagName == "I") {
+        innerObj = event.target.parentElement;
+        outerObj = event.target.parentElement.parentElement;
     } else {
         innerObj = event.target.children[0];
         outerObj = event.target;
@@ -80,17 +83,20 @@ function doNavLinkBgColor(event) {
 }
 
 function doNavLinkNoColor(event) {
-    let object1 = null;
-    let object2 = null;
+    let innerObj = null;
+    let outerObj = null;
     if (event.target.tagName == "SPAN") {
-        object1 = event.target;
-        object2 = event.target.parentElement;
+        innerObj = event.target;
+        outerObj = event.target.parentElement;
+    } else if (event.target.tagName == "I") {
+        innerObj = event.target.parentElement;
+        outerObj = event.target.parentElement.parentElement;
     } else {
-        object1 = event.target.children[0];
-        object2 = event.target;
+        innerObj = event.target.children[0];
+        outerObj = event.target;
     }
-    object1.style = "";
-    object2.style = "";
+    innerObj.style = "";
+    outerObj.style = "";
     spyNav();
 }
 

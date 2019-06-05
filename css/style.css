@@ -41,15 +41,14 @@ body,
     padding: 0 0.2rem;
 }
 
+.fa-external-link-alt {
+    vertical-align: super;
+}
+
 .intro {
     color: rgba(var(--fg3-color),1);
     text-align: center;
     margin-top: 20%;
-}
-
-#scrollpt-1 {
-    position: absolute;
-    top: 650px;
 }
 
 #spacer-a {
@@ -108,7 +107,7 @@ body,
 }
 
 section {
-    padding: 2rem 0 6rem 0;
+    padding: 5rem 0 10rem 0;
     color: inherit;
     text-align: center;
 }
@@ -118,8 +117,20 @@ section {
     height: 150px;
 }
 
+.big-button {
+    transform: scale(1.2);
+}
+
 .skill-button:hover {
     transform: scale(1.1);
+}
+
+.big-button:hover {
+    transform: scale(1.32);
+}
+
+.top-margin {
+    margin-top: .5rem;
 }
 
 .section-heading {
